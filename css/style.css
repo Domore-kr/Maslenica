@@ -1,0 +1,20 @@
+body {
+  background: #f5b53f;
+  background-image: url(/svg/pngwing\ 3_layerstyle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.head_img {
+  width: 52%;
+
+  position: absolute;
+  top: 16%;
+  left: 23%;
+}
+
+.stick {
+  position: absolute;
+  bottom: 14.5%;
+  left: 8%;
+}
