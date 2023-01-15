@@ -142,9 +142,8 @@ button {
 }
 
 footer {
-  position: absolute;
-  bottom: 0px;
   padding: 0 30px;
+  margin-top: 140px;
   margin-bottom: 40px;
 }
 
