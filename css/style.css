@@ -146,8 +146,9 @@ button {
 
 footer {
   padding: 0 30px;
-  margin-top: 140px;
+  margin-top: 90px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .agreement {
@@ -246,4 +247,14 @@ footer {
 
 .button_authorization_full {
   grid-area: button_authorization_full;
+}
+
+.agreement_href {
+  cursor: pointer;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.agreement_href span {
+  text-decoration: underline;
 }
