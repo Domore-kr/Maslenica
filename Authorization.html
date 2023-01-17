@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Authorization</title>
+  </head>
+  <body class="menu_body">
+    <img class="head_img" src="/images/Group 7475.png" alt="" />
+    <div class="menu_txt_container">
+      <h1 class="menu_head">Авторизуйся</h1>
+      <p class="menu_head_txt">Введи последние 4 цифры входящего звонка</p>
+    </div>
+
+    <div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <div class="signin-sms__wrap">
+        <input class="sms-input" type="tel" maxlength="1" tabindex="1" />
+        <input class="sms-input" type="tel" maxlength="1" tabindex="2" />
+        <input class="sms-input" type="tel" maxlength="1" tabindex="3" />
+        <input class="sms-input" type="tel" maxlength="1" tabindex="4" />
+      </div>
+      <script type="text/javascript">
+        $(".sms-input:first-child").focus();
+
+        $(".sms-input").on("keydown", function (e) {
+          let value = $(this).val();
+          let len = value.length;
+          let curTabIndex = parseInt($(this).attr("tabindex"));
+          let nextTabIndex = curTabIndex + 1;
+          let prevTabIndex = curTabIndex - 1;
+          if (len > 0) {
+            $(this).val(value.substr(0, 1));
+            $("[tabindex=" + nextTabIndex + "]").focus();
+          } else if (len == 0 && prevTabIndex !== 0) {
+            $("[tabindex=" + prevTabIndex + "]").focus();
+          }
+        });
+
+        $(".sms-input:last-child").on("keyup", function (e) {
+          if ($(this).val() != "") {
+            $(".signin-sms__wrap").addClass("done");
+          }
+        });
+      </script>
+
+      <div class="as-console-wrapper"><div class="as-console"></div></div>
+    </div>
+
+    <form class="reroll_form" action="">
+      <button class="button_menu button_reroll">Отправить еще раз</button>
+    </form>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

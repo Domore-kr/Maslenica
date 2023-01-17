@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Authorization_full</title>
+  </head>
+  <body class="menu_body">
+    <img class="head_img" src="/images/Group 7475.png" alt="" />
+    <div class="menu_txt_container">
+      <h1 class="menu_head">Авторизуйся</h1>
+      <p class="menu_head_txt">Введи ваше ФИО для участия в Акции</p>
+    </div>
+
+    <form
+      class="authorization_form authorization_form_full"
+      action="https://maslenitca.netlify.app/resulr_recorded"
+    >
+      <input
+        class="auth auth_name"
+        type="text"
+        name="auth"
+        value=""
+        placeholder="Имя"
+        required
+      />
+      <input
+        class="auth auth_fam"
+        type="text"
+        name="auth"
+        value=""
+        placeholder="Фамилия"
+        required
+      />
+      <input
+        class="auth auth_patronymic"
+        type="text"
+        name="auth"
+        value=""
+        placeholder="Отчество"
+        required
+      />
+      <button
+        class="button_menu button_authorization button_authorization_full"
+        name="button"
+      >
+        Далее
+      </button>
+    </form>
+
+    <footer>
+      <a class="agreement agreement_href">
+        Нажимая кнопку далее вы, я соглашаюсь с правилами Акции, политикой
+        конфиденциальности и согласен загрузить свой результат
+      </a>
+    </footer>
+    <script>
+      var auth_name = document.querySelector(".auth_name");
+      var auth_fam = document.querySelector(".auth_fam");
+      var auth_patronymic = document.querySelector(".auth_patronymic");
+      console.log(auth_name);
+      console.log(auth_fam);
+      console.log(auth_patronymic);
+
+      auth_patronymic.addEventListener("input", changeBackgroundAuth);
+      auth_fam.addEventListener("input", changeBackgroundAuth);
+      auth_name.addEventListener("input", changeBackgroundAuth);
+
+      function changeBackgroundAuth() {
+        if (
+          auth_name.value !== "" &&
+          auth_fam.value !== "" &&
+          auth_patronymic.value !== ""
+        ) {
+          document.querySelector("button").style.background = "#f8bc33";
+          document.querySelector("button").style["boxShadow"] =
+            "5px 10px #e59d21";
+          document.querySelector("button").style.color = "white";
+        } else {
+          document.querySelector("button").style.background = "#61c32c";
+          document.querySelector("button").style.color = "#36840c";
+        }
+      }
+    </script>
+  </body>
+</html>

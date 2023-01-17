@@ -50,6 +50,7 @@ button {
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
+  margin-top: 50px;
 }
 
 .menu_head {
@@ -159,4 +160,90 @@ footer {
   text-align: center;
 
   color: #ffffff;
+}
+
+/* Авторизация SMS */
+
+.signin-sms__wrap {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  padding: 0 30px;
+  transition: opacity 0.3s ease;
+}
+.signin-sms__wrap input {
+  width: 100%;
+  flex: 0 0 23%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 60px;
+  font-size: 2em;
+  box-shadow: none;
+  outline: none;
+  border-radius: 25px;
+  border: none;
+}
+.signin-sms__wrap input:not(:first-child) {
+  margin-left: 1%;
+}
+
+.signin-sms__wrap.done {
+  opacity: 0;
+}
+
+/* Таймер */
+
+.reroll_form {
+  margin-top: 100px;
+}
+
+.button_reroll {
+  min-width: 350px;
+}
+
+/* Авторизация полная */
+
+.authorization_form_full {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "auth_name auth_fam"
+    "auth_patronymic auth_patronymic"
+    "button_authorization_full button_authorization_full";
+}
+
+.auth {
+  text-align: center;
+
+  height: 60px;
+
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 0px;
+  color: #bbbcbc;
+}
+
+.auth_name {
+  grid-area: auth_name;
+}
+
+.auth_fam {
+  grid-area: auth_fam;
+}
+
+.auth_patronymic {
+  grid-area: auth_patronymic;
+}
+
+.button_authorization_full {
+  grid-area: button_authorization_full;
 }
