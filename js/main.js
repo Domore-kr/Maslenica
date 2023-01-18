@@ -9,6 +9,7 @@ function changeBackground() {
     document.querySelector("button").style.color = "white";
   } else {
     document.querySelector("button").style.background = "#61c32c";
+    document.querySelector("button").style["boxShadow"] = "5px 10px #48A316";
     document.querySelector("button").style.color = "#36840c";
   }
 }

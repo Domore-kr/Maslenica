@@ -258,3 +258,92 @@ footer {
 .agreement_href span {
   text-decoration: underline;
 }
+
+/* Политика конфиденциальности */
+
+.privacy_block {
+  background: #ffffff;
+  border-radius: 40px;
+
+  width: 86.9%;
+  height: 77.7%;
+
+  margin-top: 70px;
+  position: relative;
+}
+
+.head_img_privacy {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 25%;
+}
+
+.privacy_content {
+  margin-top: 50px;
+  margin: 70px 30px 0;
+
+  max-height: 80%;
+
+  overflow-y: scroll;
+}
+
+.privacy_head {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  /* or 121% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+  padding-bottom: 15px;
+}
+
+.privacy_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+  /* or 147% */
+
+  color: #000000;
+}
+
+/* Правила */
+
+/* Свайпер */
+
+.swiper {
+  height: 80%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #5ebd2b !important;
+}
+
+.promotion_content {
+  text-align: center;
+  overflow-y: inherit;
+}
+
+.promotin_head {
+  justify-content: center;
+
+  font-size: 32px;
+  line-height: 0px;
+  padding-bottom: 30px;
+}
+
+.promotin_text {
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.button_container_promotion {
+  margin: 0 20px;
+}
