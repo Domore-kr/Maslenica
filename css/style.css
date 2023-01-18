@@ -347,3 +347,149 @@ footer {
 .button_container_promotion {
   margin: 0 20px;
 }
+
+/* Рейтинг */
+
+.rating_head_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 4.6%;
+}
+
+.rating_head {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 0px;
+  /* or 0% */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  padding-top: 40px;
+}
+
+.rating_block {
+  margin-top: 30px;
+  height: auto;
+}
+
+.rating_content {
+  overflow-y: scroll;
+  margin: 15px 15px 0 15px;
+  max-height: none;
+  border-radius: 20px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0eeee;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.user_you {
+  background-color: #5ebd2b;
+}
+
+.number_rating {
+  width: 30px;
+  height: 30px;
+  background-color: #f6b931;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+}
+
+.number_rating_one {
+  background-color: #4aac16;
+}
+
+.you_number {
+  background-color: #ffffff;
+}
+
+.name {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  /* or 114% */
+
+  color: #000000;
+}
+
+.name_you {
+  color: #ffffff;
+}
+
+.number_you {
+  color: #ffffff;
+}
+
+.number {
+  color: #a1a7a7;
+}
+
+.points {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 0px;
+  /* or 0% */
+
+  display: flex;
+  align-items: center;
+
+  color: #4aac16;
+}
+
+.points_you {
+  color: #ffffff;
+}
+
+.number_rating_last {
+  background: linear-gradient(
+    180deg,
+    rgba(246, 185, 49, 0.8) 0%,
+    rgba(246, 185, 49, 0) 57.81%
+  );
+}
+
+.user_inform_last {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 76.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.points_last {
+  background: linear-gradient(
+    181.95deg,
+    #4aac16 1.65%,
+    rgba(74, 172, 22, 0) 67.02%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.rating_form {
+  width: 86.9%;
+  margin-top: 20px;
+}
+
+.button_rating {
+  background-image: url(/svg/arrow_left.svg);
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
